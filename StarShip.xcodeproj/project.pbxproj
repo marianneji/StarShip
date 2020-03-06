@@ -9,25 +9,33 @@
 /* Begin PBXBuildFile section */
 		723D57D624124AF1002B5D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D57D524124AF1002B5D60 /* AppDelegate.swift */; };
 		723D57D824124AF1002B5D60 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 723D57D724124AF1002B5D60 /* GameScene.sks */; };
-		723D57DA24124AF1002B5D60 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 723D57D924124AF1002B5D60 /* Actions.sks */; };
 		723D57DC24124AF1002B5D60 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D57DB24124AF1002B5D60 /* GameScene.swift */; };
 		723D57DE24124AF1002B5D60 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D57DD24124AF1002B5D60 /* GameViewController.swift */; };
 		723D57E124124AF1002B5D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723D57DF24124AF1002B5D60 /* Main.storyboard */; };
 		723D57E324124AF5002B5D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723D57E224124AF5002B5D60 /* Assets.xcassets */; };
 		723D57E624124AF5002B5D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723D57E424124AF5002B5D60 /* LaunchScreen.storyboard */; };
+		723D57EF24124B5A002B5D60 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 723D57ED24124B5A002B5D60 /* explosion.sks */; };
+		723D57F024124B5A002B5D60 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 723D57EE24124B5A002B5D60 /* starfield.sks */; };
+		723D57F22412599F002B5D60 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D57F12412599F002B5D60 /* SpriteKitButton.swift */; };
+		723D57F424125A87002B5D60 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D57F324125A87002B5D60 /* MenuScene.swift */; };
+		723D57F72412619F002B5D60 /* SKNodeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D57F62412619F002B5D60 /* SKNodeExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		723D57D224124AF1002B5D60 /* StarShip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarShip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723D57D524124AF1002B5D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723D57D724124AF1002B5D60 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		723D57D924124AF1002B5D60 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		723D57DB24124AF1002B5D60 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		723D57DD24124AF1002B5D60 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		723D57E024124AF1002B5D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		723D57E224124AF5002B5D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723D57E524124AF5002B5D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723D57E724124AF5002B5D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723D57ED24124B5A002B5D60 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		723D57EE24124B5A002B5D60 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
+		723D57F12412599F002B5D60 /* SpriteKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
+		723D57F324125A87002B5D60 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		723D57F62412619F002B5D60 /* SKNodeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKNodeExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,37 @@
 		723D57D424124AF1002B5D60 /* StarShip */ = {
 			isa = PBXGroup;
 			children = (
+				723D57ED24124B5A002B5D60 /* explosion.sks */,
+				723D57EE24124B5A002B5D60 /* starfield.sks */,
 				723D57D524124AF1002B5D60 /* AppDelegate.swift */,
 				723D57D724124AF1002B5D60 /* GameScene.sks */,
-				723D57D924124AF1002B5D60 /* Actions.sks */,
-				723D57DB24124AF1002B5D60 /* GameScene.swift */,
+				723D57F524125A91002B5D60 /* Scenes */,
 				723D57DD24124AF1002B5D60 /* GameViewController.swift */,
 				723D57DF24124AF1002B5D60 /* Main.storyboard */,
 				723D57E224124AF5002B5D60 /* Assets.xcassets */,
 				723D57E424124AF5002B5D60 /* LaunchScreen.storyboard */,
 				723D57E724124AF5002B5D60 /* Info.plist */,
+				723D57F12412599F002B5D60 /* SpriteKitButton.swift */,
+				723D57F8241261A7002B5D60 /* Extensions */,
 			);
 			path = StarShip;
+			sourceTree = "<group>";
+		};
+		723D57F524125A91002B5D60 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				723D57DB24124AF1002B5D60 /* GameScene.swift */,
+				723D57F324125A87002B5D60 /* MenuScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		723D57F8241261A7002B5D60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				723D57F62412619F002B5D60 /* SKNodeExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +162,9 @@
 				723D57E124124AF1002B5D60 /* Main.storyboard in Resources */,
 				723D57D824124AF1002B5D60 /* GameScene.sks in Resources */,
 				723D57E324124AF5002B5D60 /* Assets.xcassets in Resources */,
+				723D57EF24124B5A002B5D60 /* explosion.sks in Resources */,
+				723D57F024124B5A002B5D60 /* starfield.sks in Resources */,
 				723D57E624124AF5002B5D60 /* LaunchScreen.storyboard in Resources */,
-				723D57DA24124AF1002B5D60 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +177,10 @@
 			files = (
 				723D57DC24124AF1002B5D60 /* GameScene.swift in Sources */,
 				723D57DE24124AF1002B5D60 /* GameViewController.swift in Sources */,
+				723D57F424125A87002B5D60 /* MenuScene.swift in Sources */,
+				723D57F72412619F002B5D60 /* SKNodeExtension.swift in Sources */,
 				723D57D624124AF1002B5D60 /* AppDelegate.swift in Sources */,
+				723D57F22412599F002B5D60 /* SpriteKitButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGGLL93M78;
 				INFOPLIST_FILE = StarShip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGGLL93M78;
 				INFOPLIST_FILE = StarShip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
