@@ -10,41 +10,47 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+protocol SceneManagerDelegate {
+    func presentGameScene()
+    func presentMenuScene()
+}
+
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        presentMenuScene()
+    }
+}
+
+extension GameViewController: SceneManagerDelegate {
+
+    func presentGameScene() {
+        let sceneName = "GameScene"
+        if let gameScene = SKScene(fileNamed: sceneName) as? GameScene {
+            gameScene.sceneManagerDelegate = self
+            present(scene: gameScene)
+        }
+    }
+
+    func presentMenuScene() {
+        let menuScene = MenuScene()
+        menuScene.sceneManagerDelegate = self
+        present(scene: menuScene)
+    }
+
+    func present(scene: SKScene) {
         if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
+            if let gesturRecognizers = view.gestureRecognizers {
+                for recognizer in gesturRecognizers {
+                    view.removeGestureRecognizer(recognizer)
+                }
             }
-            
+            scene.scaleMode = .resizeFill
+            view.presentScene(scene)
             view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
         }
     }
 
-    override var shouldAutorotate: Bool {
-        return true
-    }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
 }
